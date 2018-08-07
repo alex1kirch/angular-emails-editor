@@ -1,0 +1,43 @@
+:host {
+  padding: 30px 40px;
+  display: block;
+  width: 500px;
+  height: 320px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0 0 34px;
+}
+
+h2 > strong {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.share-form__form-content {
+  background-color: #f5f5f5;
+  margin: -30px -40px 0 -40px;
+  padding: 30px 40px;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+footer > button {
+  color: #fff;
+  border-color: #6699ff;
+  background-color: #6699ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  margin: 0;
+  font-size: 14px;
+  margin-right: 20px;
+  padding: 8px 17px 9px 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+:host {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 4px;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  margin-bottom: 3px;
+  height: 24px;
+  line-height: 24px;
+  background-color: #d4e4ff;
+  color: #333;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: default;
+}
+
+.emails-editor-chip__content {
+  min-width: 1px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  padding-right: 8px;
+  padding-bottom: 1px;
+}
+
+.emails-editor-chip__remove-btn {
+  font-size: 10px;
+  cursor: pointer;
+}

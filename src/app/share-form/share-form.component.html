@@ -1,0 +1,10 @@
+<div class="share-form__form-content">
+  <h2>Share
+    <strong>{{boardName}}</strong> with other</h2>
+  <emails-editor #emailEditor></emails-editor>
+</div>
+
+<footer>
+  <button (click)="emailEditor.addEmail()">Add email</button>
+  <button (click)="showEmailCount(emailEditor.getEmailCount())">Get email count</button>
+</footer>
