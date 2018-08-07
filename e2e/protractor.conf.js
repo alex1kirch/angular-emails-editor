@@ -2,6 +2,7 @@
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
 const { SpecReporter } = require('jasmine-spec-reporter');
+const ImageComparison = require('protractor-image-comparison');
 
 exports.config = {
   allScriptsTimeout: 11000,
@@ -24,5 +25,9 @@ exports.config = {
       project: require('path').join(__dirname, './tsconfig.e2e.json')
     });
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
+    browser.imageComparison = new ImageComparison({
+      baselineFolder: './baseline/',
+      screenshotPath: './screenshots/'
+    });
   }
 };
