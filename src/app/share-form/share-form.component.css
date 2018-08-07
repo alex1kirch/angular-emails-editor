@@ -9,8 +9,8 @@
 h2 {
   font-weight: 400;
   font-size: 20px;
-  line-height: 27px;
-  margin: 0 0 34px;
+  line-height: 24px;
+  margin: 0 0 36px;
 }
 
 h2 > strong {
@@ -34,10 +34,10 @@ footer > button {
   background-color: #6699ff;
   color: #fff;
   border: none;
-  border-radius: 6px;
   margin: 0;
   font-size: 14px;
   margin-right: 20px;
-  padding: 8px 17px 9px 16px;
+  border-radius: 4px;
+  padding: 7px 17px 10px 16px;
   cursor: pointer;
 }

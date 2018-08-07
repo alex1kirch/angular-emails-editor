@@ -1,2 +1,11 @@
-<emails-editor-chip *ngFor="let email of emailList">{{email}}</emails-editor-chip>
-<input type="text" placeholder="add more people..." />
+<emails-editor-chip
+  *ngFor="let email of emailList; index as i"
+  [email]="email"
+  (emailRemoved)="removeEmailByIndex(i)"
+></emails-editor-chip>
+<input #emailInput type="text" placeholder="add more people..."
+  (keydown.enter)="insert($event)"
+  (keypress.comma)="insert($event)"
+  (focusout)="insert($event)"
+  (keydown.,)="insert($event)"
+  (paste)="paste($event)" />

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmailGeneratorService } from '../email-generator.service';
 
 @Component({
   selector: 'app-share-form',
@@ -6,13 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./share-form.component.css']
 })
 export class ShareFormComponent implements OnInit {
-  boardName = 'Board name';
+  boardName = 'Board name'; // default board name
+  emailList = ['sidorov@gmail.com']; // default email list
 
-  showEmailCount(emailCount: number) {
-    alert(emailCount);
+  showEmailCount() {
+    alert(this.emailList.length);
   }
 
-  constructor() {}
+  addRandomEmail(): void {
+    this.emailList.push(this.emailGeneratorService.generate());
+  }
+
+  constructor(private emailGeneratorService: EmailGeneratorService) {}
 
   ngOnInit() {}
 }

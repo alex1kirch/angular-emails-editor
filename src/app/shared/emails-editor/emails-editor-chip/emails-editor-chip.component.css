@@ -15,6 +15,14 @@
   cursor: default;
 }
 
+:host(.emails-editor-chip--invalid-email) {
+  background: white;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px dotted #d14836;
+  color: black;
+}
+
 .emails-editor-chip__content {
   min-width: 1px;
   text-overflow: ellipsis;
