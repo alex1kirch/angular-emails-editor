@@ -29,7 +29,7 @@ export class EmailsEditorComponent implements OnInit {
     }
   }
 
-  private paste(event: ClipboardEvent): void {
+  paste(event: ClipboardEvent): void {
     event.preventDefault();
     event.clipboardData
       .getData('Text') // Gets the text pasted
@@ -39,7 +39,7 @@ export class EmailsEditorComponent implements OnInit {
       });
   }
 
-  private insert(event: KeyboardEvent): void {
+  insert(event: KeyboardEvent): void {
     event.preventDefault();
     const emailInput = (event.target as HTMLInputElement);
     const value: string = emailInput.value;
